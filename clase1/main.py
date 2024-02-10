@@ -6,4 +6,9 @@ class MotorElectrico :
         print("motor encendido")
 
     def __init__(self) :
-        passdddd
+        pass
+
+
+
+motor = MotorElectrico()
+motor.encender()
