@@ -11,4 +11,6 @@ class MotorElectrico :
 
 
 motor = MotorElectrico()
+motor.potencia = 4000
 motor.encender()
+print(motor.potencia)
