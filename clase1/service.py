@@ -1,0 +1,3 @@
+class servive :
+    pass
+

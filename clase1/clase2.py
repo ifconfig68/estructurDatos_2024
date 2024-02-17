@@ -91,7 +91,7 @@ print(f"hola {pantalla.nombre} objeto {Articulo.contador} creado")
 
 
 
-pantalla
+###enviando cambios locales
 
 
 
