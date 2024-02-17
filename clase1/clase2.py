@@ -1,14 +1,18 @@
 ##crear clase padre 
 
-tipo: str
-anio:int
-referencia:str
 
 
 class Articulo :
+    
+    tipo: str
+    anio:int
+    referencia:str
+    contador = 0
+
     def __init__(self,  name, price):
      self.nombre = name
      self.precio = price
+     Articulo.contador =+ 1
 
 
     def asignar_tipo (self , tipo):
@@ -79,6 +83,16 @@ def obetener_ancho (self ) ->int:
 def asignar_tasa_refresco(self) -> int :
    return self.tasa_refresco 
 
+
+
+pantalla = Articulo("dell " , 3)
+pantalla2 = Articulo("dell2  " , 3)
+print(f"hola {pantalla.nombre} objeto {Articulo.contador} creado")
+print(f"hola {pantalla2.nombre} objeto {Articulo.contador} creado")
+
+
+
+pantalla
 
 
 
