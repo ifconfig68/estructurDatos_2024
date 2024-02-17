@@ -88,7 +88,6 @@ def asignar_tasa_refresco(self) -> int :
 pantalla = Articulo("dell " , 3)
 pantalla2 = Articulo("dell2  " , 3)
 print(f"hola {pantalla.nombre} objeto {Articulo.contador} creado")
-print(f"hola {pantalla2.nombre} objeto {Articulo.contador} creado")
 
 
 
