@@ -17,6 +17,14 @@ def __str__  (self) :
      return f"Auto {self.marca} - combustuble{self.conbustible}"
 
 
+class Motos(Vehiculo) :
+    def __init__(self, marca, conbustible):
+        super().__init__(marca, conbustible)
+    
+
+    
+
+
 
 if __name__ == "__main__" :
     pass 
