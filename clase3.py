@@ -7,4 +7,4 @@ print (multiplicacion(5 , 2))
 
 
 #hacer division utilizando restas
-
+#hacer sucesion de fibonacci
