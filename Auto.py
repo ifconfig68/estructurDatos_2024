@@ -29,7 +29,7 @@ class Motos(Vehiculo) :
 if __name__ == "__main__" :
     pass 
     autos = []
-    for j in range (10) :
+    for j in range (1) :
         n = input ("ingrese Marca de auto ")
         c = input ("ingrese tipo de conbustible ")
         autos.append(Vehiculo(n , c))
@@ -39,10 +39,7 @@ if __name__ == "__main__" :
 
 
     autos[0].ver_autos()
-    autos[1].ver_autos()
-    autos[2].ver_autos()
-    autos[3].ver_autos()
-
-
+    autos[0].encender()
+    autos[0].arrancar()     
     
 
