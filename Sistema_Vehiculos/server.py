@@ -5,7 +5,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Union
 from paquete.cola import Cola
-from paquete import Vehiculo
 
 app = FastAPI()
 cola = Cola()
@@ -20,9 +19,9 @@ def estado():
     return {"status": "ok", "elementos": elementos}
 
 @app.post("/encolar")
-def encolar(item: Vehiculo ):
+def encolar(item: dict ):
     cola.encolar(item)
-    return {"status": "registro completo", "Vehiculo": item   }
+    return {"status": "registro completo", "Vehiculo": item }
 
 @app.get("/desencolar")
 def desencolar():
@@ -45,14 +44,4 @@ def see_first():
 def see_last():
     elementos = cola.ver_ultimo()
     return {"status": "ok", "elementos": elementos}
-
-
-@app.get("/operar/{id_vehiculo}")
-def lavar_auto_por_id(id_vehiculo: int):
-    # Se intenta lavar el vehículo con el ID proporcionado
-    mensaje = cola.lavar_por_id(id_vehiculo)
-    
-    # Se devuelve el mensaje resultante
-    return {"status": "ok", "Vehiculo": id_vehiculo}
-
-
+        

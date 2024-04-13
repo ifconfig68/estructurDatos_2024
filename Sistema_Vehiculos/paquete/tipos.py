@@ -9,6 +9,5 @@ class Item(BaseModel):
 
 class Vehiculo(BaseModel):
     Tipo : str
-    id: int
-    revisado : bool = False
+  
     
